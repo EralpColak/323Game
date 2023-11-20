@@ -145,3 +145,21 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    margin: 0 5px;
+
+    border: 10px solid white;
+
+    border-radius: 10px;
+}
