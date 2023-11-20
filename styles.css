@@ -151,13 +151,15 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    height: 80vh;
+    cursor: pointer;
 
 }
 
 .image-container img {
     width: 100px;
     height: 100px;
-    margin: 0 5px;
+    margin: 0 10px;
     border: 5px solid white;
     border-radius: 10px;
 }
