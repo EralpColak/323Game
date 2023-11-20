@@ -155,8 +155,8 @@ body {
 }
 
 .image-container img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: 0 5px;
     border: 5px solid white;
     border-radius: 10px;
