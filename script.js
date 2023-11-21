@@ -12,30 +12,39 @@ document.addEventListener('DOMContentLoaded', function () {
     const checkbox = document.getElementById('myCheckbox');
 
     let userInPage = false;
+    let checkboxClicked = false;
     let submitButtonClicked = false;
+
+    
     setTimeout(function () {
         userInPage = true;
-    }, 3000);
+    }, 30000);
 
     const intervalId = setInterval(function () {
-        if (userInPage && checkbox.checked && submitButtonClicked) {
+        if (userInPage && checkboxClicked && submitButtonClicked) {
             alert('You gain points!');
             clearInterval(intervalId);
         }
     }, 1000);
 
-    submitButton.addEventListener('click', function () {
-
-        submitButtonClicked = true;
+    checkbox.addEventListener('click', function () {
+        checkboxClicked = checkbox.checked;
     });
 
-
-
-
-
+    
+    submitButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevents the default form submission action
+        
+        if (!checkboxClicked) {
+            // Display an alert or perform actions to prompt the user to check the checkbox first
+            alert('Please check the checkbox before submitting.');
+        } else {
+            submitButtonClicked = true;
+        }
 });
 
 
+});
 
 
 
@@ -50,14 +59,25 @@ function returnToMain() {
 
 function checkPassword() {
     const enteredPassword = document.getElementById('passwordInput').value;
-    const correctPasswords = [".", ",", "!"]; // burda gerekli kuralları yazalım
+    const minLength = 8;
+    const betterLength = 14;
+    const hasUppercase = /[A-Z]/.test(enteredPassword);
+    const hasLowercase = /[a-z]/.test(enteredPassword);
+    const hasNumber = /[0-9]/.test(enteredPassword);
+    const hasSymbol = /[!@#$%^&*()-=_+[\]{}|\\;:'",.<>/?`~]/.test(enteredPassword);
 
-    if (correctPasswords.some(password => enteredPassword.toLowerCase().includes(password))) {
-        alert('Password is correct!');
+    if (
+        enteredPassword.length >= minLength &&
+        (enteredPassword.length >= betterLength ||
+            (hasUppercase && hasLowercase && hasNumber && hasSymbol))
+    ) {
+        alert('Password is strong.');
     } else {
-        alert('Password is incorrect!');
+        alert('Password is weak! Please follow the password rules.');
     }
 }
+
+
 
 
 
