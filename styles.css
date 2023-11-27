@@ -2,7 +2,7 @@ body {
     margin: 0;
     overflow: hidden;
     backgorund-color: #191A19;
-    background-image: 'matrix.jpeg';
+    /*background-image: 'matrix.jpeg';*/
     object-fit: fill;
 }
 
