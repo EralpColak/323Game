@@ -6,7 +6,7 @@ body {
 
 .hImg {
     position: absolute;
-    width: 50%;
+    width: 40%;
     z-index: -1;
     left: 250px;
     bottom: 30%;
