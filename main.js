@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
 function openNewGamePage(gameNumber) {
     window.location.href = 'game' + gameNumber + '.html';
 }
