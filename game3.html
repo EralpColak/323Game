@@ -8,9 +8,7 @@
 </head>
 
 <body>
-    <div> class="instruction-container">
-        <p class="instruction-text">Third Game</p>
-    </div>
+
     <div class="cookies-popup" id="cookiesPopup">
         <div class="cookies-content">
 
@@ -41,10 +39,23 @@
 
                 </label>
 
+                <button class="submit-button" onclick="checkSliderCombination()">Submit</button>
 
-                <button class="return-button" onclick="returnToMain()">Return to Main</button>
 
-                <script src="script.js"></script>
+                <div class="result-popup" id="resultPopup">
+                    <p id="resultMessage"></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <button class="return-button" onclick="returnToMain()">Return to Main</button>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
