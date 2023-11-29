@@ -1,3 +1,4 @@
+// main page
 document.addEventListener('DOMContentLoaded', function () {
     const passwordBoxes = document.querySelectorAll('.password-box');
     passwordBoxes.forEach((box, index) => {
@@ -5,17 +6,22 @@ document.addEventListener('DOMContentLoaded', function () {
             openNewGamePage(index + 1);
         });
     });
+
+    // game 1 and game 2 has submit button
     const submitButton = document.getElementById('submitButton');
     submitButton.addEventListener('click', function () {
         checkPassword();
     });
+
+    // game 2 page
     const checkbox = document.getElementById('myCheckbox');
+
 
     let userInPage = false;
     let checkboxClicked = false;
     let submitButtonClicked = false;
 
-    
+
     setTimeout(function () {
         userInPage = true;
     }, 30000);
@@ -31,24 +37,24 @@ document.addEventListener('DOMContentLoaded', function () {
         checkboxClicked = checkbox.checked;
     });
 
-    
+
     submitButton.addEventListener('click', function (event) {
         event.preventDefault(); // Prevents the default form submission action
-        
+
         if (!checkboxClicked) {
             // Display an alert or perform actions to prompt the user to check the checkbox first
             alert('Please check the checkbox before submitting.');
         } else {
             submitButtonClicked = true;
         }
-});
+    });
 
 
 });
 
 
 
-//************************************** */
+//************************************** */ returning the game it is in every game page
 function openNewGamePage(gameNumber) {
     window.location.href = 'game' + gameNumber + '.html';
 }
@@ -57,7 +63,7 @@ function returnToMain() {
     window.location.href = 'main.html';
 }
 
-function checkPassword() {
+function checkPassword() { // game 1 page
     const enteredPassword = document.getElementById('passwordInput').value;
     const minLength = 8;
     const betterLength = 14;
@@ -82,7 +88,7 @@ function checkPassword() {
 
 
 
-// ***************************************************** game 4
+// ***************************************************** game 4 page
 document.addEventListener('DOMContentLoaded', function () {
     const imageContainer = document.querySelector('.image-container');
     const selectedImages = [];
