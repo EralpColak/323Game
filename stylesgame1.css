@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url('matrix.jpeg');
+}
+
+.instruction-container1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.password-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.submit-button {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#passwordInput {
+    width: 400px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+}
+
+.return-button {
+    position: absolute;
+    top: 80%;
+    right: 220px;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
