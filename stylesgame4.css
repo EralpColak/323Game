@@ -1,17 +1,17 @@
-body {
-    margin: 0;
-    overflow: hidden;
-    background-image: url('matrix.jpeg');
-}
-
 .instruction-container {
     position: absolute;
-    top: 5%;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    font-size: 4vw;
+    font-size: 50px;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url('matrix.jpeg');
 }
 
 .image-container {
@@ -19,8 +19,9 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 10%;
-    height: 60vh;
+    height: 80vh;
     cursor: pointer;
+
 }
 
 .image-container img {
@@ -36,11 +37,11 @@ body {
     top: 80%;
     right: 5%;
     transform: translateY(-50%);
-    padding: 2vh 4vw;
-    font-size: 1.5vw;
+    padding: 10px 20px;
+    font-size: 16px;
     color: white;
     background-color: green;
     border: 2px solid white;
-    border-radius: 1vw;
+    border-radius: 10px;
     cursor: pointer;
 }

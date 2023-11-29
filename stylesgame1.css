@@ -6,12 +6,12 @@ body {
 
 .instruction-container1 {
     position: absolute;
-    top: 5%;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    font-size: 2vw;
+    font-size: 25px;
 }
 
 .password-container1 {
@@ -19,15 +19,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     padding: 20px;
 }
 
 .submit-button {
-    width: 40vw;
-    height: 5vh;
+    width: 100px;
+    height: 40px;
     margin-top: 10px;
-    font-size: 1.5vw;
+    font-size: 16px;
     color: white;
     background-color: green;
     border: 2px solid white;
@@ -36,12 +36,11 @@ body {
 }
 
 #passwordInput {
-    width: 70vw;
-    height: 6vh;
-    font-size: 1.5vw;
+    width: 400px;
+    height: 60px;
+    font-size: 16px;
     border-radius: 15px;
     border: 2px solid #ccc;
-    margin-top: 10px;
 }
 
 .return-button {
@@ -49,8 +48,9 @@ body {
     top: 80%;
     right: 5%;
     transform: translateY(-50%);
-    padding: 2vh 4vw;
-    font-size: 1.5vw;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
     background-color: green;
     border: 2px solid white;
     border-radius: 10px;

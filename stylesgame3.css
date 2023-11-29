@@ -4,6 +4,7 @@ body {
     background-image: url('matrix.jpeg');
 }
 
+
 .toggle-switch {
     display: none;
 }
@@ -47,12 +48,11 @@ body {
     margin-top: 10%;
 }
 
-.submit-button2,
-.return-button {
-    width: 40vw;
-    height: 5vh;
+.submit-button2 {
+    width: 100px;
+    height: 40px;
     margin-top: 10px;
-    font-size: 1.5vw;
+    font-size: 16px;
     color: white;
     background-color: green;
     border: 2px solid white;
@@ -61,7 +61,15 @@ body {
 }
 
 .return-button {
-    right: 5%;
+    position: absolute;
     top: 80%;
+    right: 5%;
     transform: translateY(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
 }

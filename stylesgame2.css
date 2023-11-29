@@ -5,12 +5,14 @@ body {
 }
 
 .general-box {
+
     flex-direction: column;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+
 }
 
 .scrollable-box {
@@ -24,6 +26,7 @@ body {
     text-align: center;
     color: white;
     background-color: green;
+
 }
 
 .checkbox {
@@ -31,13 +34,28 @@ body {
     margin-top: 10px;
     position: relative;
     color: white;
+
 }
 
-.return-button,
+.return-button {
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 .submit-button {
-    width: 40vw;
+    width: 100px;
+    height: 40px;
     margin-top: 10px;
-    font-size: 1.5vw;
+    font-size: 16px;
     color: white;
     background-color: green;
     border: 2px solid white;
@@ -47,10 +65,10 @@ body {
 
 .instruction-container {
     position: absolute;
-    top: 5%;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    font-size: 2vw;
+    font-size: 25px;
 }

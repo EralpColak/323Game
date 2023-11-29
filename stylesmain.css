@@ -8,8 +8,7 @@ body {
     position: absolute;
     width: 50%;
     z-index: -1;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 250px;
     bottom: 30%;
 }
 
@@ -20,7 +19,6 @@ body {
     justify-content: center;
     color: white;
     font-size: 18px;
-    padding: 20px;
 }
 
 .background-container {
@@ -46,26 +44,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3vw;
+    font-size: 100px;
     color: rgb(252, 255, 255);
     border: 7px solid rgb(128, 124, 125);
     border-radius: 20px;
     cursor: pointer;
+
 }
 
 .point-counter {
     position: absolute;
-    top: 2%;
-    right: 2%;
-    font-size: 2vw;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
 }
 
 .instruction-container {
     position: absolute;
-    top: 2%;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    font-size: 4vw;
+    font-size: 50px;
 }
