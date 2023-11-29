@@ -11,16 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     const checkbox = document.getElementById('myCheckbox');
 
-    const submitButton3 = document.getElementById("submit-button");
-    submitButton3.addEventListener('click', function () {
-        checkSliderCombination();
-    });
-
     let userInPage = false;
     let checkboxClicked = false;
     let submitButtonClicked = false;
 
-
+    
     setTimeout(function () {
         userInPage = true;
     }, 30000);
@@ -36,46 +31,17 @@ document.addEventListener('DOMContentLoaded', function () {
         checkboxClicked = checkbox.checked;
     });
 
-
+    
     submitButton.addEventListener('click', function (event) {
         event.preventDefault(); // Prevents the default form submission action
-
+        
         if (!checkboxClicked) {
             // Display an alert or perform actions to prompt the user to check the checkbox first
             alert('Please check the checkbox before submitting.');
         } else {
             submitButtonClicked = true;
         }
-    });
-    function checkSliderCombination() {
-
-        const sliderCheckboxes = document.querySelectorAll('.toggle-switch');
-
-
-        const selectedSliders = [];
-
-
-        sliderCheckboxes.forEach((sliderCheckbox, index) => {
-            if (sliderCheckbox.checked) {
-
-                selectedSliders.push(index + 1);
-            }
-        });
-
-
-        if (
-            selectedSliders.length === 3 &&
-            selectedSliders.includes(1) &&
-            selectedSliders.includes(2) &&
-            selectedSliders.includes(5)
-        ) {
-
-            alert('Congratulations! You win!');
-        } else {
-
-            alert('Sorry, you lose. Try again.');
-        }
-    }
+});
 
 
 });
@@ -150,24 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-
-
-
-
-
-
-
-
-
 });
-
-
-
-
-
-
-
-
 
 
 
