@@ -5,19 +5,18 @@ body {
 }
 
 .general-box {
-
     flex-direction: column;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-
 }
 
 .scrollable-box {
-    width: 500px;
-    height: 400px;
+    width: 90%;
+    max-width: 500px;
+    height: 60vh;
     overflow-y: scroll;
     border: 2px solid #ccc;
     padding: 10px;
@@ -25,7 +24,6 @@ body {
     text-align: center;
     color: white;
     background-color: green;
-
 }
 
 .checkbox {
@@ -33,28 +31,13 @@ body {
     margin-top: 10px;
     position: relative;
     color: white;
-
 }
 
-.return-button {
-    position: absolute;
-    top: 80%;
-    right: 220px;
-    transform: translateY(-50%);
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: green;
-    border: 2px solid white;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
+.return-button,
 .submit-button {
-    width: 100px;
-    height: 40px;
+    width: 40vw;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 1.5vw;
     color: white;
     background-color: green;
     border: 2px solid white;
@@ -64,10 +47,10 @@ body {
 
 .instruction-container {
     position: absolute;
-    top: 20px;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    font-size: 25px;
+    font-size: 2vw;
 }

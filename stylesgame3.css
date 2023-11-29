@@ -4,7 +4,6 @@ body {
     background-image: url('matrix.jpeg');
 }
 
-
 .toggle-switch {
     display: none;
 }
@@ -18,6 +17,7 @@ body {
     background-color: #ccc;
     border-radius: 34px;
     transition: background-color 0.3s;
+    margin-bottom: 10px;
 }
 
 .toggle-switch:checked+.slider {
@@ -44,14 +44,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 250px;
+    margin-top: 10%;
 }
 
-.submit-button2 {
-    width: 100px;
-    height: 40px;
+.submit-button2,
+.return-button {
+    width: 40vw;
+    height: 5vh;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 1.5vw;
     color: white;
     background-color: green;
     border: 2px solid white;
@@ -60,15 +61,7 @@ body {
 }
 
 .return-button {
-    position: absolute;
+    right: 5%;
     top: 80%;
-    right: 220px;
     transform: translateY(-50%);
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: green;
-    border: 2px solid white;
-    border-radius: 10px;
-    cursor: pointer;
 }

@@ -1,47 +1,46 @@
-.instruction-container {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    font-size: 50px;
-}
-
 body {
     margin: 0;
     overflow: hidden;
     background-image: url('matrix.jpeg');
 }
 
+.instruction-container {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+}
+
 .image-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    height: 80vh;
+    margin-top: 10%;
+    height: 60vh;
     cursor: pointer;
-
 }
 
 .image-container img {
-    width: 100px;
-    height: 100px;
-    margin: 0 10px;
-    border: 5px solid white;
-    border-radius: 10px;
+    width: 10vw;
+    height: 10vw;
+    margin: 0 2%;
+    border: 2vw solid white;
+    border-radius: 2vw;
 }
 
 .return-button {
     position: absolute;
     top: 80%;
-    right: 220px;
+    right: 5%;
     transform: translateY(-50%);
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 2vh 4vw;
+    font-size: 1.5vw;
     color: white;
     background-color: green;
     border: 2px solid white;
-    border-radius: 10px;
+    border-radius: 1vw;
     cursor: pointer;
 }
