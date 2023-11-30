@@ -32,6 +32,7 @@ function checkPassword() {
     ) {
         updatePoints(25);
         alert('Password is strong. You earned 25 points!');
+        returnToMain();
     } else {
         alert('Password is weak! Please follow the password rules.');
         returnToMain();

@@ -30,7 +30,9 @@ function checkSliderCombination() {
         // User wins
         alert('Good job. You just choose the necessary cookies. You earned 25 points!');
         updatePoints(25); // Add 25 points for winning
+        returnToMain();
     } else {
+        alert("You lose. You didn't choose correct cookies");
         // User loses
         returnToMain();
     }
