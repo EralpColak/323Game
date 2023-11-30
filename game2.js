@@ -1,6 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     const checkbox = document.getElementById('myCheckbox');
     const submitButton = document.getElementById('submitButton');
+    const pointCounter = document.getElementById('pointCounter');
+
+    // Retrieve the user's points from localStorage
+    const storedPoints = localStorage.getItem('userPoints');
+
+    // If points are found in localStorage, update the display
+    if (storedPoints !== null) {
+        pointCounter.innerText = 'Points: ' + storedPoints;
+    }
 
     let userInPage = false;
     let checkboxClicked = false;
@@ -8,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setTimeout(function () {
         userInPage = true;
-    }, 30000);
+    }, 3000);
 
     const intervalId = setInterval(function () {
         if (userInPage && checkboxClicked && submitButtonClicked) {
@@ -28,9 +37,19 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Please check the checkbox before submitting.');
         } else {
             submitButtonClicked = true;
+            updatePoints(25); // Add points when the submit button is clicked
         }
     });
 });
+
+function updatePoints(pointsToAdd) {
+    const pointCounter = document.getElementById('pointCounter');
+    const currentPoints = parseInt(pointCounter.innerText.split(':')[1].trim());
+    const newPoints = currentPoints + pointsToAdd;
+    pointCounter.innerText = 'Points: ' + newPoints;
+    localStorage.setItem('userPoints', newPoints);
+}
+
 function returnToMain() {
     window.location.href = 'main.html';
 }

@@ -1,12 +1,30 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const passwordBoxes = document.querySelectorAll('.password-box');
-    passwordBoxes.forEach((box, index) => {
-        box.addEventListener('click', function () {
-            openNewGamePage(index + 1);
-        });
-    });
+    const pointCounter = document.getElementById('pointCounter');
+
+    // Retrieve the user's points from localStorage
+    const storedPoints = localStorage.getItem('userPoints');
+
+    // If points are found in localStorage, update the display
+    if (storedPoints !== null) {
+        pointCounter.innerText = 'Points: ' + storedPoints;
+    }
 });
 
-function openNewGamePage(gameNumber) {
-    window.location.href = 'game' + gameNumber + '.html';
+//window.addEventListener('beforeunload', function () {
+//Reset points only when the browser is closed
+//  localStorage.setItem('userPoints', 0);
+//});
+
+
+function gogame1() {
+    window.location.href = 'game1.html';
+}
+function gogame2() {
+    window.location.href = 'game2.html';
+}
+function gogame3() {
+    window.location.href = 'game3.html';
+}
+function gogame4() {
+    window.location.href = 'game4.html';
 }

@@ -1,9 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
     const submitButton = document.getElementById('submitButton');
+    const pointCounter = document.getElementById('pointCounter');
+
 
     submitButton.addEventListener('click', function () {
         checkPassword();
     });
+
+    // Retrieve the user's points from localStorage
+    const storedPoints = localStorage.getItem('userPoints');
+
+    // If points are found in localStorage, update the display
+    if (storedPoints !== null) {
+        pointCounter.innerText = 'Points: ' + storedPoints;
+    }
 });
 
 function checkPassword() {
@@ -20,11 +30,34 @@ function checkPassword() {
         (enteredPassword.length >= betterLength ||
             (hasUppercase && hasLowercase && hasNumber && hasSymbol))
     ) {
-        alert('Password is strong.');
+        updatePoints(25);
+        alert('Password is strong. You earned 25 points!');
     } else {
         alert('Password is weak! Please follow the password rules.');
     }
 }
+
+function updatePoints(pointsToAdd) {
+    const pointCounter = document.getElementById('pointCounter');
+    const currentPoints = parseInt(pointCounter.innerText.split(':')[1].trim());
+    const newPoints = currentPoints + pointsToAdd;
+    pointCounter.innerText = 'Points: ' + newPoints;
+    localStorage.setItem('userPoints', newPoints);
+}
+document.addEventListener('DOMContentLoaded', function () {
+
+    const pointCounter = document.getElementById('pointCounter');
+
+
+    const storedPoints = localStorage.getItem('userPoints');
+
+
+    if (storedPoints !== null) {
+        pointCounter.innerText = 'Points: ' + storedPoints;
+    }
+});
+
+
 function returnToMain() {
     window.location.href = 'main.html';
 }
