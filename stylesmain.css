@@ -5,12 +5,35 @@ body {
     font-family: 'VT323', monospace;
 }
 
+.instruction-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.background-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.instruction-text{
+    padding-left: 40%;
+}
+
 .hImg {
     position: absolute;
-    width: 40%;
+    width: 60%;
     z-index: -1;
-    left: 250px;
-    bottom: 30%;
+    left: 6%;
+    bottom: 8%;
 }
 
 .rules {
@@ -22,18 +45,10 @@ body {
     font-size: 18px;
 }
 
-.background-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10%;
-}
+
 
 .password-container {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .password-box {
@@ -60,25 +75,59 @@ body {
     color: white;
 }
 
-.instruction-container {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    font-size: 50px;
-}
-
 .rules-button {
+    position: absolute;
+    top: 5%;
+    left: 3%;
     width: 100px;
     height: 40px;
     margin-top: 10px;
     font-family: 'VT323', monospace;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     background-color: green;
     border: 2px solid white;
     border-radius: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .instruction-container {
+        font-size: 30px;
+    }
+
+    .instruction-text {
+        padding-left: 55%;
+    }
+
+    .hImg {
+        width: 80%;
+        left: 10%;
+        bottom: 5%;
+    }
+
+    .rules {
+        font-size: 14px;
+    }
+
+    .password-container {
+        flex-direction: row; /* Change to column layout */
+        align-items: center; /* Center align items */
+    }
+
+    .password-box {
+        width: 120px;
+        height: 120px;
+        font-size: 40px;
+        border-width: 4px;
+        margin: 5px;
+    }
+
+    .rules-button {
+        font-size: 16px;
+        top: 3%;
+        left: 2%;
+        width: 80px;
+        height: 30px;
+    }
 }

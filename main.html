@@ -11,28 +11,30 @@
 </head>
 
 <body>
-    <img class="hImg" src="hackerGlow.png" alt="hacker-img">
+    
 
-    <div class="instruction-container" style="left: 65%;">
+    <div class="instruction-container">
         <p class="instruction-text">Hello noobish.</p>
         <p class="instruction-text">Do you think that you can survive from this!!</p>
+
+        <img class="hImg" src="hackerGlow.png" alt="hacker-img">
+
+        <div class="background-container">
+            <div class="password-container">
+                <button class="password-box" id="box1" onclick="gogame1()">*</button>
+                <button class="password-box" id="box2" onclick="gogame2()">*</button>
+                <button class="password-box" id="box3" onclick="gogame3()">*</button>
+                <button class="password-box" id="box4" onclick="gogame4()">*</button>
+            </div>
+    
+        </div>
     </div>
 
     <div class="point-counter" id="pointCounter">Points: 0</div>
 
-    <div class="background-container">
-        <div class="password-container">
-            <button class="password-box" id="box1" onclick="gogame1()">*</button>
-            <button class="password-box" id="box2" onclick="gogame2()">*</button>
-            <button class="password-box" id="box3" onclick="gogame3()">*</button>
-            <button class="password-box" id="box4" onclick="gogame4()">*</button>
-        </div>
+    
+    <button class="rules-button" onclick="gotorules()">Rules</button>
 
-
-
-        <button class="rules-button" onclick="gotorules()">Rules</button>
-
-    </div>
     <script src="main.js"></script>
 
 </body>
