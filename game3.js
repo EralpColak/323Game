@@ -28,11 +28,11 @@ function checkSliderCombination() {
         toggleSwitches[4].checked
     ) {
         // User wins
-        alert('Good job!');
+        alert('Good job. You just choose the necessary cookies. You earned 25 points!');
         updatePoints(25); // Add 25 points for winning
     } else {
         // User loses
-        alert('You lost points.');
+        returnToMain();
     }
 }
 

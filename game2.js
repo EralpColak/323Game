@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const intervalId = setInterval(function () {
         if (userInPage && checkboxClicked && submitButtonClicked) {
-            alert('You gain points!');
+            alert('Thanks for being better citizen. You earned 25 points !');
             clearInterval(intervalId);
         }
     }, 1000);
@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Please check the checkbox before submitting.');
         } else {
             submitButtonClicked = true;
-            updatePoints(25); // Add points when the submit button is clicked
+            updatePoints(25);
+            returnToMain(); // Add points when the submit button is clicked
         }
     });
 });

@@ -42,3 +42,6 @@ function gogame3() {
 function gogame4() {
     window.location.href = 'game4.html';
 }
+function gotorules() {
+    window.location.href = "rules.html";
+}

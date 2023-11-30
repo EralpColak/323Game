@@ -34,6 +34,7 @@ function checkPassword() {
         alert('Password is strong. You earned 25 points!');
     } else {
         alert('Password is weak! Please follow the password rules.');
+        returnToMain();
     }
 }
 

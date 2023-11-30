@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url('matrix.jpeg');
+    font-family: 'VT323', monospace;
+}
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+.return-button {
+    position: absolute;
+    top: 92%;
+    right: 5%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    color: white;
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', function () {
             selectedImages.includes(7)
         ) {
             // User wins
-            alert("You win!");
+            alert("Good job. You just choose the correct programs. You earned 25 points!'");
             updatePoints(25);
         } else if (selectedImages.includes(3) || selectedImages.includes(8)) {
             // User loses
-            alert("You lose!");
+            returnToMain();
         }
     }
 });
