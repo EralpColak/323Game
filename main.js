@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Check if storedPoints is equal to '100'
     if (storedPoints === '100') {
-        alert("You won the game:)")
+        alert("You won the game:)");
+        location.reload(); // Refresh the page
     }
 });
 
