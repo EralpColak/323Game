@@ -5,6 +5,16 @@ body {
     font-family: 'VT323', monospace;
 }
 
+.instruction-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
 .point-counter {
     position: absolute;
     top: 20px;
@@ -22,8 +32,16 @@ body {
     align-items: center;
     justify-content: space-between;
     min-height: 250px;
+    width: 80%;
 
 }
+.cookie-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15.5%;
+}
+
 
 .option {
     display: flex;
@@ -68,17 +86,12 @@ body {
     transform: translateX(26px);
 }
 
-.cookie-options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10%;
-}
 
 .submit-button2 {
     width: 100px;
     height: 40px;
     margin-top: 10px;
+    font-family: 'VT323', monospace;
     font-size: 16px;
     color: white;
     background-color: green;
@@ -88,11 +101,9 @@ body {
 }
 
 .return-button {
-    position: absolute;
-    top: 80%;
-    right: 5%;
-    transform: translateY(-50%);
+    margin-top: 10px;
     padding: 10px 20px;
+    font-family: 'VT323', monospace;
     font-size: 16px;
     color: white;
     background-color: green;

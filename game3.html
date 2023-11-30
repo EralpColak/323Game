@@ -10,13 +10,11 @@
 
 <body>
     <div class="instruction-container">
-        <p class="instruction-text">Third Game</p>
+        <h2>Third Game</h2>
         <p>Select the cookies you want to accept and then press the submit button.</p>
 
     </div>
     <div class="point-counter" id="pointCounter">Points: 0</div>
-    <div class="cookies-popup" id="cookiesPopup">
-        <div class="cookies-content">
 
             <div class="cookie-options">
                 <div class="options-container">
@@ -57,20 +55,21 @@
                         </label>
                     </div>
 
-                    <button class="submit-button2" onclick="checkSliderCombination()">Submit</button>
-
-
+                    <table>
+                        <tr>
+                            <td> <button class="submit-button2" onclick="checkSliderCombination()">Submit</button>
+                            </td>
+                            <td> <button class="return-button" onclick="returnToMain()">Return to Main</button></td>
+                        </tr>
+                    </table>
+                   
+                   
 
                 </div>
 
             </div>
 
-        </div>
-    </div>
-
-
-
-    <button class="return-button" onclick="returnToMain()">Return to Main</button>
+    
 
     <script src="game3.js"></script>
 </body>

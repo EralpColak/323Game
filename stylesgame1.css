@@ -36,6 +36,7 @@ body {
     width: 100px;
     height: 40px;
     margin-top: 10px;
+    font-family: 'VT323', monospace;
     font-size: 16px;
     color: white;
     background-color: green;
@@ -54,10 +55,11 @@ body {
 
 .return-button {
     position: absolute;
-    top: 80%;
+    top: 92%;
     right: 5%;
     transform: translateY(-50%);
     padding: 10px 20px;
+    font-family: 'VT323', monospace;
     font-size: 16px;
     color: white;
     background-color: green;

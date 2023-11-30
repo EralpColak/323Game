@@ -12,7 +12,7 @@ body {
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 25px;
 }
 
 
@@ -44,10 +44,11 @@ body {
 
 .return-button {
     position: absolute;
-    top: 80%;
+    top: 92%;
     right: 5%;
     transform: translateY(-50%);
     padding: 10px 20px;
+    font-family: 'VT323', monospace;
     font-size: 16px;
     color: white;
     background-color: green;
