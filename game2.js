@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (userInPage && checkboxClicked && submitButtonClicked) {
             alert('Thanks for being better citizen. You earned 25 points !');
             clearInterval(intervalId);
-            returnToMain();
+         
         } 
     }, 1000);
 
