@@ -2,6 +2,7 @@ body {
     margin: 0;
     overflow: hidden;
     background-image: url('matrix.jpeg');
+    font-family: 'VT323', monospace;
 }
 
 .hImg {
@@ -36,7 +37,6 @@ body {
 }
 
 .password-box {
-    font-family: 'Times New Roman', Times, serif;
     width: 200px;
     height: 200px;
     background-color: rgba(29, 77, 25);

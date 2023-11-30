@@ -2,6 +2,7 @@ body {
     margin: 0;
     overflow: hidden;
     background-image: url('matrix.jpeg');
+    font-family: 'VT323', monospace;
 }
 
 .point-counter {

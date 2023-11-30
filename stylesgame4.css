@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url('matrix.jpeg');
+    font-family: 'VT323', monospace;
+}
+
 .instruction-container {
     position: absolute;
     top: 20px;
@@ -8,11 +15,6 @@
     font-size: 50px;
 }
 
-body {
-    margin: 0;
-    overflow: hidden;
-    background-image: url('matrix.jpeg');
-}
 
 .point-counter {
     position: absolute;
