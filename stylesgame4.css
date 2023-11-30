@@ -41,6 +41,15 @@ body {
     border: 5px solid white;
     border-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+img:active{
+    opacity: 0.8;
+}
+
+img:hover{
+    border-color: #16FF00;
 }
 
 .return-button {

@@ -3,6 +3,16 @@ body {
     overflow: hidden;
     background-image: url('matrix.jpeg');
     font-family: 'VT323', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.head{
+    position: relative;
+    left: -43%;
+
 }
 
 .rules {
@@ -12,6 +22,15 @@ body {
     justify-content: center;
     color: white;
     font-size: 18px;
+    border: 2px solid #ccc;
+    background-color: green;
+    border-radius: 3%;
+    width: 50%;
+    height: 60vh;
+    padding: 10px;
+    margin: 20px;
+    text-align: left;
+    line-height: 2;
 }
 
 .return-button {
