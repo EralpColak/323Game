@@ -17,11 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setTimeout(function () {
         userInPage = true;
-    }, 3000);
+    }, 5000);
 
     const intervalId = setInterval(function () {
         if (userInPage && checkboxClicked && submitButtonClicked) {
-            alert('Thanks for being better citizen. You earned 25 points !');
             clearInterval(intervalId);
          
         } 
@@ -37,8 +36,17 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!checkboxClicked) {
             alert('Please check the checkbox before submitting.');
         } else {
+            if (!userInPage){
+                alert("You haven't red the script in estimated time.")
+                returnToMain();
+            
+        }else if (userInPage){
             submitButtonClicked = true;
+            alert('Thanks for being better citizen. You earned 25 points !');
             updatePoints(25);
+            returnToMain();
+            
+        }
             // Add points when the submit button is clicked
         }
     });

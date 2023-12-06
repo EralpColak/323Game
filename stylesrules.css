@@ -9,12 +9,6 @@ body {
     height: 100vh;
 }
 
-.head{
-    position: relative;
-    left: -43%;
-
-}
-
 .rules {
     display: flex;
     flex-direction: column;

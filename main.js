@@ -45,3 +45,7 @@ function gogame4() {
 function gotorules() {
     window.location.href = "rules.html";
 }
+
+function closePage() {
+    window.location.href = 'https://www.google.com'; // To close page and navigate to google
+}
