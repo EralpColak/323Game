@@ -47,5 +47,5 @@ function gotorules() {
 }
 
 function closePage() {
-    window.location.href = 'https://www.google.com'; // To close page and navigate to google
+    window.location.href = 'https://eralpcolak.github.io/323Articulate/story.html'; // To close page and navigate to google
 }
