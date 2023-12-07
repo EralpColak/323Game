@@ -28,8 +28,6 @@ body {
 }
 
 .scrollable-box {
-    width: 60%;
-    max-width: 450px;
     height: 60vh;
     overflow-y: scroll;
     border: 2px solid #ccc;
