@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             returnToMain();
         } else if (selectedImages.includes(3) || selectedImages.includes(8)) {
-            alert("You lose.You didn't choose correct programs! ");
+            alert("You lose.You didn't choose correct programs!");
             localStorage.setItem('colorToChange4', 'red'); // Set 'red' or any color you prefer
             // User loses
             returnToMain();

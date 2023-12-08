@@ -14,7 +14,6 @@ body {
     text-align: center;
     color: white;
     font-size: 25px;
-    width: 40%;
 }
 
 .point-counter {
@@ -26,6 +25,7 @@ body {
 }
 
 .image-container {
+    width: 80vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;

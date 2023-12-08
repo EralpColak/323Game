@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
         }else if (userInPage){
             submitButtonClicked = true;
-            alert('Thanks for being better citizen. You earned 25 points !');
+            alert('Thanks for being better citizen. You earned 25 points!');
             updatePoints(25);
             localStorage.setItem('colorToChange2', '#191A19'); // Set 'red' or any color you prefer
             localStorage.setItem('buttonClickability2', 'disabled');

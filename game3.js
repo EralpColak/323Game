@@ -34,7 +34,7 @@ function checkSliderCombination() {
         localStorage.setItem('buttonClickability3', 'disabled');
         returnToMain();
     } else {
-        alert("You lose. You didn't choose correct cookies");
+        alert("You lose. You didn't choose correct cookies.");
         localStorage.setItem('colorToChange3', 'red'); // Set 'red' or any color you prefer
         // User loses
         returnToMain();
