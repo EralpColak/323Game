@@ -28,13 +28,13 @@ p{
 }
 
 .image-container {
-    width: 70vh;
+    width: 80vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 12%;
-    height: 55vh;
+    height: 40vh;
 }
 
 .image-container img {
