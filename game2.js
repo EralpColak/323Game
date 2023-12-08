@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setTimeout(function () {
         userInPage = true;
-    }, 5000);
+    }, 17000);
 
     const intervalId = setInterval(function () {
         if (userInPage && checkboxClicked && submitButtonClicked) {
