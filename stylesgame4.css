@@ -7,7 +7,7 @@ body {
 }
 p{
     width: 500px;
-    padding-left: 8%;
+    padding-left: 6%;
 }
 .instruction-container {
     position: absolute;
@@ -28,7 +28,7 @@ p{
 }
 
 .image-container {
-    width: 90vh;
+    width: 80vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
