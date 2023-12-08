@@ -3,7 +3,6 @@ body {
     overflow: hidden;
     background-image: url('matrix.jpeg');
     font-family: 'VT323', monospace;
-    overflow-y: auto;
 }
 p{
     width: 500px;
