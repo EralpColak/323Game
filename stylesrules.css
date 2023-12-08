@@ -10,6 +10,7 @@ body {
 }
 
 .rules {
+    height: 73vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +28,7 @@ body {
 
 .return-button {
     position: absolute;
-    top: 92%;
+    top: 95%;
     right: 5%;
     transform: translateY(-50%);
     padding: 10px 20px;

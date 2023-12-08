@@ -5,7 +5,10 @@ body {
     font-family: 'VT323', monospace;
     overflow-y: auto;
 }
-
+p{
+    width: 500px;
+    padding-left: 8%;
+}
 .instruction-container {
     position: absolute;
     top: 20px;
@@ -25,7 +28,7 @@ body {
 }
 
 .image-container {
-    width: 80vh;
+    width: 90vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
