@@ -7,7 +7,7 @@ body {
 }
 p{
     width: 500px;
-    padding-left: 6%;
+    padding-left: 4%;
 }
 .instruction-container {
     position: absolute;
@@ -34,7 +34,7 @@ p{
     align-items: center;
     justify-content: center;
     margin-top: 12%;
-    height: 15vh;
+    height: 10vh;
 }
 
 .image-container img {
