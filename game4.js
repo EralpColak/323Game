@@ -38,9 +38,13 @@ document.addEventListener('DOMContentLoaded', function () {
             // User wins
             alert("Good job. You just choose the correct programs. You earned 25 points!'");
             updatePoints(25);
+            localStorage.setItem('colorToChange4', '#191A19'); // Set 'red' or any color you prefer
+            localStorage.setItem('buttonClickability4', 'disabled');
+
             returnToMain();
         } else if (selectedImages.includes(3) || selectedImages.includes(8)) {
             alert("You lose.You didn't choose correct programs! ");
+            localStorage.setItem('colorToChange4', 'red'); // Set 'red' or any color you prefer
             // User loses
             returnToMain();
         }

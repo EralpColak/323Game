@@ -38,12 +38,15 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             if (!userInPage){
                 alert("You haven't red the script in estimated time.")
+                localStorage.setItem('colorToChange2', 'red'); // Set 'red' or any color you prefer
                 returnToMain();
             
         }else if (userInPage){
             submitButtonClicked = true;
             alert('Thanks for being better citizen. You earned 25 points !');
             updatePoints(25);
+            localStorage.setItem('colorToChange2', '#191A19'); // Set 'red' or any color you prefer
+            localStorage.setItem('buttonClickability2', 'disabled');
             returnToMain();
             
         }

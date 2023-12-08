@@ -30,9 +30,12 @@ function checkSliderCombination() {
         // User wins
         alert('Good job. You just choose the necessary cookies. You earned 25 points!');
         updatePoints(25); // Add 25 points for winning
+        localStorage.setItem('colorToChange3', '#191A19'); // Set 'red' or any color you prefer
+        localStorage.setItem('buttonClickability3', 'disabled');
         returnToMain();
     } else {
         alert("You lose. You didn't choose correct cookies");
+        localStorage.setItem('colorToChange3', 'red'); // Set 'red' or any color you prefer
         // User loses
         returnToMain();
     }

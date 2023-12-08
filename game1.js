@@ -32,9 +32,14 @@ function checkPassword() {
     ) {
         updatePoints(25);
         alert('Password is strong. You earned 25 points!');
+        localStorage.setItem('colorToChange', '#191A19'); // Set 'red' or any color you prefer
+        localStorage.setItem('buttonClickability', 'disabled');
+
         returnToMain();
     } else {
         alert('Password is weak! Please follow the password rules.');
+        localStorage.setItem('colorToChange', 'red'); // Set 'red' or any color you prefer
+
         returnToMain();
     }
 }
